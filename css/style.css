@@ -1,0 +1,107 @@
+
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+
+body{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;     
+    background-color: #686363;   
+}
+
+.page__container {
+    max-width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+}
+.page__content {
+    padding: 15px;
+}
+
+.icon-page:not(:last-child) {
+    margin-bottom: 20px;
+} 
+.icon-page__text {
+    font-size: 34px;
+    font-weight: 700;
+    color: #083316;
+}
+.icon-page__text:not(:last-child) {
+    margin-bottom: 10px;
+} 
+.icon-page__link:not(:last-child) {
+    margin-bottom: 20px;
+} 
+.icon-page__link img {    
+    width: 50px;
+    height: 50px;
+    animation: 1s linear 0s normal none infinite running rot;
+}
+.icon-page__link:hover img,
+.page__content.active .icon-page__link img {
+    animation: none;
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.page__form {
+    position: relative;	 
+    margin: 0 auto;
+    width: 100%; 	
+	transform: translateX(-2000px);
+}
+.page__content.active .page__form {
+    transform: translateX(0);	
+}
+.page__label {
+    font-size: 18px;
+}
+.page__label span{    
+    color: #104d24;
+    font-size: 22px;
+}
+.page__input {  
+    width: 100%;
+    border: 3px solid #23793f;
+    border-radius: 10px;
+    outline: none;
+    padding: 15px;
+    transition: border 0.3s ease-in-out 0s;
+}
+.page__input:hover {
+    border: 3px solid #104d24;
+}
+.page__input:not(:last-child) {
+    margin-bottom: 10px;
+}
+.page__button {
+    position: absolute;
+    top: 20px;
+    right: 0;    
+    width: 50px;
+    height: 30px;
+    background: url(../img/red_arow.svg) 0 0 no-repeat;
+} 
+
+
+
+
+
+
